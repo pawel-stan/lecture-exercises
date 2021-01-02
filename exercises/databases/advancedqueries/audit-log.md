@@ -22,8 +22,8 @@ Tabela `lecture_audit_log` powinna zawierać następujące kolumny:
 
 ### Uwagi
 
-- PostgreSQL udostępnia funkcje zwracające aktualny czas — [dokumentacja](https://www.postgresql.org/docs/current/functions-datetime.html#FUNCTIONS-DATETIME-CURRENT); na przykład `now()` lub `CURRENT_TIMESTAMP`;
-- Jeśli chodzi o typy kolumn `old_value` i `new_value` — do kolumn typu tekstowego możemy zapisać także liczby oraz daty (PostgreSQL sam wykona konwersję); `VARCHAR(X)` lub `TEXT` wydają się tu chyba dobrymi kandydatami.
+- sql udostępnia funkcje zwracające aktualny czas — [dokumentacja](https://www.sql.org/docs/current/functions-datetime.html#FUNCTIONS-DATETIME-CURRENT); na przykład `now()` lub `CURRENT_TIMESTAMP`;
+- Jeśli chodzi o typy kolumn `old_value` i `new_value` — do kolumn typu tekstowego możemy zapisać także liczby oraz daty (sql sam wykona konwersję); `VARCHAR(X)` lub `TEXT` wydają się tu chyba dobrymi kandydatami.
 
 ## Workflow
 
@@ -37,7 +37,7 @@ Uwaga: Dodanie nowego rekordu do `lecture` do też zmiana — powinno skutkować
 
 Wprowadźmy kilka zmian do tabelki `lecture`:
 
-```postgresql
+```sql
 UPDATE lecture
 SET name       = 'CSS3',
     start_time = '2021-01-03 12:00',
@@ -63,7 +63,7 @@ WHERE name = 'Bootstrap';
 
 Jeśli wszystko pójdzie dobrze (a dane przygotujecie za pomocą [init-data.sql](./init-data.sql)), to po wykonaniu tych operacji w tabelce `lecture_audit_log` powinno znajdować się 7 wpisów:
 
-```postgresql
+```sql
 SELECT *
 FROM lecture_audit_log
 ORDER BY id;

@@ -9,7 +9,9 @@
 
 ## Bazy danych
 
-TODO
+### Zaawansowane zapytania i widoki
+
+- Audit log --> [audit-log.md](exercises/databases/advancedqueries/audit-log.md)
 
 ## Java
 
