@@ -13,6 +13,10 @@
 
 - Audit log --> [audit-log.md](exercises/databases/advancedqueries/audit-log.md)
 
+## JUnit
+
+- Proste testy jednostkowe w czystej Javie --> [simple-junit-test.md](excercises/junit/simple-junit-test.md)
+
 ## Java
 
 TODO
