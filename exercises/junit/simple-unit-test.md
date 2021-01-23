@@ -1,14 +1,12 @@
-# JUnit
+# JUnit — proste testy w czystej Javie
 
 ## Projekt
 
-Na stronie <https://github.com/pawel-stan/junit-sample-project> udostępniłem projekt zawierający jedną klasę prostą metodę znajdującą pierwszą literę podanego
-argumentu (`StringUtils#getFirstLetter(String s)`) oraz kilka testów jednostkowych w [JUnit 5](https://junit.org/junit5/docs/current/user-guide) — w klasie `StringUtilsTest`.
+Na stronie <https://github.com/pawel-stan/junit-sample-project> udostępniłem projekt zawierający jedną klasę prostą metodę znajdującą pierwszą literę podanego argumentu (`StringUtils#getFirstLetter(String s)`) oraz kilka testów jednostkowych w [JUnit 5](https://junit.org/junit5/docs/current/user-guide) — w klasie `StringUtilsTest`.
 
 ## Zadanie
 
-1. Dodaj do klasy `StringUtils` metodę `getLastLetter(String s)`, która zwróci ostatnią literę podanego w argumencie słowa, a jeżeli w argumencie podamy `null` lub `""`, metoda
-   powinna zwrócić `""`; na przykład:
+1. Dodaj do klasy `StringUtils` metodę `getLastLetter(String s)`, która zwróci ostatnią literę podanego w argumencie słowa, a jeżeli w argumencie podamy `null` lub `""`, metoda powinna zwrócić `""`; na przykład:
    - `getLastLetter("JUnit")` --> `"t"`
    - `getLastLetter("Studia podyplomowe")` --> `"e"`
    - `getLastLetter("")` --> `""`

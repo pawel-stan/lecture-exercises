@@ -16,6 +16,7 @@
 ## JUnit
 
 - Proste testy jednostkowe w czystej Javie --> [simple-junit-test.md](excercises/junit/simple-junit-test.md)
+- Zaawansowane testy jednostkowe w Spring Boot + Mockito --> [advanced-mock-test.md](excercises/junit/advanced-mock-test.md)
 
 ## Java
 
