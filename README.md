@@ -6,6 +6,7 @@
 
 - Dane po pierwszym wykładzie --> [init-data-0.sql](materials/databases/init-data-0.sql)
 - Dane po pierwszych ćwiczeniach na wykładzie nr 2 --> [init-data-1.sql](materials/databases/init-data-1.sql)
+- Dane dla wykładu nr 3 — Zaawansowane zapytania i widoki --> [init-data-2.sql](materials/databases/init-data-2.sql)
 
 ## Ćwiczenia
 
