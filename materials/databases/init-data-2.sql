@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS lecture CASCADE;
+DROP TABLE if EXISTS lecture CASCADE;
 
-DROP TABLE IF EXISTS room;
+DROP TABLE if EXISTS room;
 
-DROP TABLE IF EXISTS teacher;
+DROP TABLE if EXISTS teacher;
 
 -- Nauczyciele
 
@@ -88,8 +88,8 @@ VALUES ( (SELECT id FROM teacher WHERE email = 'knowak@db.pl'), (SELECT id FROM 
        ( (SELECT id FROM teacher WHERE email = 'jkowalski@db.pl'), (SELECT id FROM room WHERE room_number = '2D'),
          '2022-04-27 11:30', '2022-12-01 13:30', 'Java' ),
        ( (SELECT id FROM teacher WHERE email = 'ekot@db.pl'), (SELECT id FROM room WHERE room_number = '5'),
-         '2022-04-27 14:00', '2020-11-06 16:30', 'SQL' ),
+         '2022-04-27 14:00', '2022-12-06 16:30', 'SQL' ),
        ( (SELECT id FROM teacher WHERE email = 'jkowalski@db.pl'), (SELECT id FROM room WHERE room_number = '6'),
-         '2022-04-29 07:00', '2020-11-05 11:00', 'HTML' ),
+         '2022-04-29 07:00', '2022-12-05 11:00', 'HTML' ),
        ( (SELECT id FROM teacher WHERE email = 'knowak@db.pl'), (SELECT id FROM room WHERE room_number = '10'),
-         '2022-04-26 11:00', '2020-11-05 11:30', 'SQL' );
+         '2022-04-26 11:00', '2022-12-05 11:30', 'SQL' );
